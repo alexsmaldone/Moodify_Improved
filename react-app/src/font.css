@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "NexaThin";
+    src: local('NexaThin'), 
+    url("../src/fonts/Nexa/Nexa-Thin.woff") format('woff'),
+    url("../src/fonts/Nexa/Nexa-Thin.woff2") format('woff2')
+}
+
+@font-face {
+    font-family: "NexaLight";
+    src: local('NexaLight'), 
+    url("../src/fonts/Nexa/Nexa-Light.woff") format('woff'),
+    url("../src/fonts/Nexa/Nexa-Light.woff2") format('woff2')
+}
+
+@font-face {
+    font-family: "NexaBold";
+    src: local('NexaBold'), 
+    url("../src/fonts/Nexa/Nexa-Bold.woff") format('woff'),
+    url("../src/fonts/Nexa/Nexa-Bold.woff2") format('woff2')
+}
+
+@font-face {
+    font-family: "NexaExtraBold";
+    src: local('NexaExtraBold'), 
+         url("../src/fonts/Nexa/Nexa-XBold.woff") format('woff'),
+         url("../src/fonts/Nexa/Nexa-XBold.woff2") format('woff2')
+}
+
+@font-face {
+    font-family: "NexaHeavy";
+    src: local('NexaHeavy'), 
+         url("../src/fonts/Nexa/Nexa-Heavy.woff") format('woff'),
+         url("../src/fonts/Nexa/Nexa-Heavy.woff2") format('woff2')
+}

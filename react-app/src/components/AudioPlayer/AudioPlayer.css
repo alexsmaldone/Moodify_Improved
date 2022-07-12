@@ -1,0 +1,272 @@
+.audioPlayer {
+  align-items: center;
+  justify-content: space-between;
+
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 20px 10px 10px 10px;
+  height: 50px;
+
+  background-color: #242424;
+  color: white;
+  z-index: 4;
+}
+
+.prelogin-audioplayer-container {
+  align-items: center;
+  justify-content: space-between;
+
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 20px 10px 10px 10px;
+  height: 50px;
+
+  background-image: linear-gradient(90deg,#af2896,#509bf5);
+  color: white;
+  z-index: 4;
+}
+
+.prelogin-signup-button {
+  display: flex;
+  position: fixed;
+  bottom: 18px;
+  right: 40px;
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
+  /* cursor: pointer; */
+}
+
+.prelogin-signup-button:hover{
+  border: 4px solid white;
+  width: 152px;
+  height: 42px;
+}
+
+.prelogin-signup-button .signUpButton{
+  color: #509bf5;
+  font-size: 15px;
+}
+
+.playingSongInfo {
+  display: flex;
+  color: white;
+  margin-bottom: 0.7em;
+}
+
+.playingSongText {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left: 0.5em;
+}
+
+.playerSongImgContainer {
+  width: 60px;
+  height: 60px;
+}
+
+.playingSongArtist {
+  font-size: 0.7em;
+  color: #a7a7a7;
+  font-family: "NexaThin";
+}
+
+.playingSongTitle {
+  font-family: "NexaLight";
+  padding-bottom: 6px;
+  font-size: 0.8em;
+}
+
+.playerSongImgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.songPlayerControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  justify-content: space-around;
+}
+
+.timingBarContainer {
+  display: flex;
+  width: 45vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8em;
+  margin-bottom: 0.7em;
+}
+
+.playPause {
+  border: none;
+  border-radius: 50%;
+  margin-bottom: -7px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1em;
+  color: #000;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playPause:hover {
+  transform: scale(1.1);
+}
+
+.play {
+  position: relative;
+  left: 2px;
+}
+
+.currentTime,
+.duration {
+  font-size: 0.65em;
+  font-family: "NexaThin";
+}
+
+.currentTime {
+  margin-left: 25px;
+}
+
+.progressBarContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.volumeControls {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.volumeButton {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.volumeButton:hover {
+  transform: scale(1.1);
+}
+
+.progressBar {
+  --bar-bg: #535353;
+  --seek-before-width: 0;
+  --seek-before-color: #b3b3b3;
+  --knob: #fff;
+  --selectedKnob: hsl(56, 98%, 51%);
+
+  appearance: none;
+  background: var(--bar-bg);
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  outline: none;
+}
+
+/* progress bar - safari */
+.progressBar::-webkit-slider-runnable-track {
+  background: var(--bar-bg);
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  outline: none;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-track {
+  background: var(--bar-bg);
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  outline: none;
+}
+
+.progressBar::-moz-focus-outer {
+  border: 0;
+}
+
+/* progress bar - chrome and safari */
+.progressBar::before {
+  content: "";
+  height: 5px;
+  width: var(--seek-before-width);
+  background-color: var(--seek-before-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* progress bar - firefox */
+.progressBar::-moz-range-progress {
+  background-color: var(--seek-before-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 5px;
+}
+
+/* knob - chrome and safari */
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--knob);
+  cursor: pointer;
+  position: relative;
+  margin: -5px 0 0 0;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knob while dragging - chrome and safari */
+.progressBar:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnob);
+}
+
+/* knob - firefox */
+.progressBar::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: transparent;
+  background-color: var(--knob);
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+/* knob while dragging - firefox */
+.progressBar:active::-moz-range-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnob);
+}

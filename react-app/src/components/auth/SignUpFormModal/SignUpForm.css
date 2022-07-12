@@ -1,0 +1,121 @@
+.signUpBlackBox {
+  margin: auto;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.signUpElements {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(18, 18, 18);
+  align-items: center;
+  margin-top: 100px;
+  padding: 30px 20px;
+}
+
+.formWelcomeBoxTxt {
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  inline-size: 250px;
+  overflow-wrap: break-word;
+  font-family: "NexaHeavy";
+}
+
+.formMainDiv {
+  width: 300px;
+  align-content: center;
+}
+
+.forminputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.formInputIndiv {
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+}
+
+.formInputIndiv::placeholder {
+  color: rgb(182, 182, 182);
+  font-size: 12px;
+  font-family: "NexaThin";
+}
+
+.forminputs input {
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 15px;
+  font-family: "NexaLight";
+}
+
+.submitBtn {
+  padding: 15px 10px 15px 10px;
+  width: 100%;
+  color: white;
+  background: #1ed760;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "NexaExtraBold";
+}
+
+.orBox {
+  margin-top: 25px;
+  color: white;
+  font-family: "NexaLight";
+}
+
+
+.loginFromSignUp {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.loginFromSignUpBtn {
+  margin-left: 10px;
+}
+
+.loginFromSignUpTxt {
+  font-family: "NexaLight";
+  font-size: 15px;
+}
+
+.demoUserLogBtn {
+  padding: 15px 10px 15px 10px;
+  width: 100%;
+  color: white;
+  background: #1ed760;
+  font-size: 10px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'NexaHeavy';
+}
+
+.loginButton {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-family: 'NexaHeavy';
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Modal {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.errors {
+  color: white;
+}

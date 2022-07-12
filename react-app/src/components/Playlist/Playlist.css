@@ -1,0 +1,239 @@
+.playlist-detail-container {
+  padding-top: 90px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  background-image: linear-gradient(180deg, #b3b3b3, black);
+  color: white;
+  max-width: 100%;
+  height: 100vh;
+  margin-left: 200px;
+  overflow-y: scroll;
+}
+
+.playlist-detail-container::-webkit-scrollbar {
+  display: none;
+}
+
+.playlist-top-detail-container {
+  display: flex;
+}
+
+.playlist-detail-img-container {
+  width: 250px;
+  height: 250px;
+}
+
+.playlist-detail-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.playlist-detail-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2em;
+}
+
+.playlist-detail-dots-container {
+  display: flex;
+  align-items: center;
+}
+
+.playlist-detail-dot-button {
+  border: none;
+  background-color: transparent;
+}
+
+.playlist-detail-dots {
+  font-size: 2em;
+  color: #b3b3b3;
+}
+
+.playlist-detail-dots:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.playlist-text {
+  font-family: "NexaBold";
+  margin-top: 8em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.playlist-detail-username {
+  font-family: "NexaBold";
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.playlist-detail-playlist-name {
+  font-family: "NexaHeavy";
+  font-size: 4em;
+}
+
+.playlist-detail-table-container {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.playlist-detail-table-container table {
+  border-spacing: 20px 20px;
+}
+
+.playlist-detail-table-container th {
+  text-align: left;
+  font-weight: NexaBold;
+  color: white;
+  font-size: 0.8em;
+}
+
+.playlist-detail-table-header {
+  font-family: "NexaBold";
+  width: 200px;
+}
+
+.playlist-detail-top-border {
+  width: 100%;
+  outline: thin solid rgb(201, 197, 197);
+}
+
+.playlist-detail-table-container td {
+  font-family: "NexaThin";
+  text-align: left;
+}
+/* .playlist-detail-table-container td:hover {
+  color: white;
+} */
+
+.playlist-detail-table-header-play {
+  width: 50px;
+}
+.playlist-detail-table-header-delete {
+  width: 50px;
+}
+
+.playlist-detail-table-header-image {
+  width: 50px;
+  text-align: center;
+}
+
+.playlist-detail-grey-text {
+  color: white;
+}
+
+.no-text-dec {
+  text-decoration: none;
+  color: white;
+}
+
+.no-text-dec:hover {
+  color: white;
+  font-family: NexaLight;
+}
+
+.playlist-song-img-container {
+  width: 50px;
+  height: 50px;
+}
+
+.playlist-song-img-container img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.playlist-playPause {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playlist-playPause:hover {
+  transform: scale(1.1);
+}
+
+.playlist-detail-delete-song {
+  border: none;
+  padding: 10px;
+  border-radius: 21px;
+  background-color: transparent;
+  color: white;
+  font-weight: lighter;
+}
+
+.playlist-detail-delete-song:hover {
+  border: 1px solid red;
+  color: red;
+  font-weight: bold;
+  background-color: transparent;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.playlist-detail-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+}
+
+.playlist-detail-dropdown-content {
+  background-color: #242424;
+  position: absolute;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.playlist-detail-edit-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.playlist-detail-delete-btn {
+  color: #b3b3b3;
+  font-family: NexaBold;
+  font-size: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist-detail-edit-btn:hover {
+  background-color: #b3b3b3;
+}
+
+.playlist-detail-delete-btn:hover {
+  background-color: #b3b3b3;
+  color: white;
+}
+
+.playlist-user-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+  width: 100%;
+}
+
+.playlist-search-main-div {
+  margin-left: 8em;
+}

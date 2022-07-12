@@ -1,0 +1,172 @@
+.user-profile-page-container {
+  padding-top: 90px;
+  padding-left: 300px;
+  padding-bottom: 100px;
+  background-color: #1c1c1c;
+  max-width: 100%;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.user-profile-page-container::-webkit-scrollbar {
+  display: none;
+}
+
+.user-profile-top-section {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 1em;
+  font-family: "NexaHeavy";
+}
+
+.user-circle-link:hover {
+  opacity: 0.8;
+  transform: scale(1.04);
+}
+
+.user-profile-info {
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.user-profile-username {
+  color: white;
+  font-family: "NexaHeavy";
+  font-size: 35px;
+}
+
+.user-circle {
+  color: white;
+  font-size: 7em;
+  text-decoration: none;
+}
+
+.user-profile-follow-button {
+  color: var(--dark);
+  background-color: #1ed760;
+  border: none;
+  min-width: 80px;
+  min-height: 25px;
+  border-radius: 21px;
+  font-weight: bold;
+}
+
+.user-profile-follow-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.user-profile-following-button {
+  background-color: #b3b3b3;
+  border: none;
+  min-width: 80px;
+  min-height: 25px;
+  border-radius: 21px;
+  font-weight: bold;
+}
+
+.user-profile-following-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #ff073a;
+}
+
+.following-info {
+  display: flex;
+}
+
+.user-follower-count {
+  background-color: #1ed760;
+  padding: 10px;
+  border-radius: 21px;
+  font-weight: bold;
+  color: black;
+}
+
+.user-follower-count:hover {
+  transform: scale(1.04);
+  opacity: 0.8;
+}
+.user-following-count {
+  background-color: #1ed760;
+  padding: 10px;
+  border-radius: 21px;
+  font-weight: bold;
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.user-following-count:hover {
+  transform: scale(1.04);
+  opacity: 0.8;
+}
+
+.not-following-div {
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.not-following-message {
+  color: white;
+  font-size: 20px;
+  font-family: "NexaThin";
+}
+
+.musical-note {
+  color: white;
+  font-size: 30px;
+}
+
+.user-follow-card-container {
+  max-width: 300px;
+}
+
+.user-follow-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.user-follow-card {
+  display: flex;
+}
+
+.user-follow-card-pic {
+  font-size: 32px;
+  margin-left: 3px;
+}
+
+.user-follow-card {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px white;
+  margin-bottom: 1em;
+  padding: 5px;
+  border-radius: 11px;
+  font-family: "NexaLight";
+}
+
+.user-follow-card:hover {
+  border: 1px solid white;
+}
+
+.user-follow-username-container {
+  width: 200px;
+  word-wrap: break-word;
+}
+
+.user-follow-username {
+  color: white;
+  margin-left: 0.5em;
+  font-size: 20px;
+}
